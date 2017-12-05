@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="Skript Template:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Skript_Template_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Skript Template.jar">
+        <element id="module-output" name="Skript Template" />
+      </element>
+      <element id="file-copy" path="D:/Skript/Skript.jar" />
+      <element id="library" level="project" name="annotations-java8" />
+      <element id="file-copy" path="D:/Skript/spigot-api-1.8.8-R0.1-SNAPSHOT-latest.jar" />
+    </root>
+  </artifact>
+</component>

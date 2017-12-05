@@ -1,0 +1,6 @@
+name: This
+description: The Handsome Image System
+main: com.pikachu.skriptaddon.Main
+version: 1.3
+author: Pikachu
+depend: [Skript]

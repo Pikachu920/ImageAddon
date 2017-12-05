@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: Skript.jar annotations-java8.jar spigot-api-1.8.8-R0.1-SNA
+ PSHOT-latest.jar
+
