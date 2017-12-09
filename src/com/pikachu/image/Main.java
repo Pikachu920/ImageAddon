@@ -30,25 +30,8 @@ public class Main extends JavaPlugin {
         config.options().copyDefaults(true);
         saveConfig();
 
-        Util.colors.put("BLACK", new int[] {0, 0, 0});
-        Util.colors.put("DARK_BLUE", new int[] {0, 0, 170});
-        Util.colors.put("DARK_GREEN", new int[] {0, 170, 0});
-        Util.colors.put("DARK_AQUA", new int[] {0, 170, 170});
-        Util.colors.put("DARK_RED", new int[] {170, 0, 0});
-        Util.colors.put("DARK_PURPLE", new int[] {170, 0, 170});
-        Util.colors.put("GOLD", new int[] {255, 170, 0});
-        Util.colors.put("GRAY", new int[] {170, 170, 170});
-        Util.colors.put("DARK_GRAY", new int[] {85, 85, 85});
-        Util.colors.put("BLUE", new int[] {85, 85, 255});
-        Util.colors.put("GREEN", new int[] {85, 255, 85});
-        Util.colors.put("AQUA", new int[] {85, 255, 255});
-        Util.colors.put("RED", new int[] {255, 85, 85});
-        Util.colors.put("LIGHT_PURPLE",  new int[] {255, 85, 255});
-        Util.colors.put("YELLOW", new int[] {255, 255, 85});
-        Util.colors.put("WHITE", new int[] {255, 255, 255});
-
         try {
-            getAddonInstance().loadClasses("com.pikachu.skriptaddon.skript", "classes", "expressions", "effects");
+            getAddonInstance().loadClasses("com.pikachu.image.skript", "classes", "expressions", "effects");
         } catch (IOException e) {
             e.printStackTrace();
         }

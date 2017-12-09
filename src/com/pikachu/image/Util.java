@@ -17,7 +17,6 @@ public class Util {
     private static String absolute = new File("").getAbsolutePath();
     private static FileConfiguration config = Main.getInstance().getConfig();
     private static Logger log = Main.getInstance().getLogger();
-    public static HashMap<String, int[]> colors = new HashMap<>();
     public static final String colorCode = Pattern.quote("§");
 
     public static String relativePath(String path) {
@@ -91,7 +90,8 @@ public class Util {
 
         if (!(mcFormat.contains(colorCode))) {
             AttributedString white = new AttributedString(mcFormat);
-            white.addAttribute(TextAttribute.FOREGROUND, getAttribute(ChatColor.WHITE));
+            System.out.println("im going white!");
+            white.addAttribute(TextAttribute.FOREGROUND, Color.WHITE);
             return white;
         }
 
