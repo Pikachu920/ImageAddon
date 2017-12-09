@@ -14,7 +14,7 @@ public class ImageStore {
 
     public static BufferedImage get(String name) {
         return images.get(name);
-    }
+    } //
 
     public static void remove(String name) {
         images.remove(name);

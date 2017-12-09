@@ -51,7 +51,7 @@ public class EffCombineImages extends AsyncEffect {
         }
 
         if (images.size() != 0) {
-            BufferedImage end = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+            BufferedImage end = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
             Graphics graphics = end.getGraphics();
             int y = 0;
             for (BufferedImage part : images) {

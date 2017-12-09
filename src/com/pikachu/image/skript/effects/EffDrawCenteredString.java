@@ -48,9 +48,9 @@ public class EffDrawCenteredString extends AsyncEffect {
             return;
 
         }
-        Font font = new Font("Arial", Font.PLAIN, 31);
-        Font serifFont = new Font("Serif", Font.PLAIN, 48);
-        Font sansSerifFont = new Font("Monospaced", Font.PLAIN, 48);
+        Font font = new Font("Arial", Font.PLAIN, 10);
+        Font serifFont = new Font("Serif", Font.PLAIN, 10);
+        Font sansSerifFont = new Font("Monospaced", Font.PLAIN, 10);
         AttributedString as = new AttributedString(string);
         as.addAttribute(TextAttribute.FONT, serifFont);
         as.addAttribute(TextAttribute.FONT, sansSerifFont, 2, 5);
@@ -68,6 +68,7 @@ public class EffDrawCenteredString extends AsyncEffect {
 
         graphics2D.clearRect(0, 0, image.getWidth(), image.getHeight());
         graphics2D.drawString(as.getIterator(), x, y);
+        graphics2D.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_ATOP, 0.75f));
         graphics2D.dispose();
 
     }
