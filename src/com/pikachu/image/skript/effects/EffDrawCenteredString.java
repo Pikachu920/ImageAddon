@@ -66,7 +66,7 @@ public class EffDrawCenteredString extends AsyncEffect {
         int x = ((image.getWidth() - metrics.stringWidth(string)) / 2); //
         int y = ((image.getHeight() - metrics.getHeight()) / 2) + metrics.getAscent();
 
-        graphics2D.setColor(Color.GREEN);
+        graphics2D.clearRect(0, 0, image.getWidth(), image.getHeight());
         graphics2D.drawString(as.getIterator(), x, y);
         graphics2D.dispose();
 
